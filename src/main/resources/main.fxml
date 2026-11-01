@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      spacing="15"
+      prefWidth="450"
+      prefHeight="350">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label fx:id="titleLabel"
+           text="Temperature Converter"/>
+
+    <Label fx:id="languageLabel"
+           text="Select Language"/>
+
+    <ComboBox fx:id="languageComboBox"/>
+
+    <TextField fx:id="temperatureInput"
+               promptText="Enter temperature in Celsius"/>
+
+    <Button fx:id="convertButton"
+            text="Convert to Fahrenheit"/>
+
+    <Label fx:id="resultLabel"
+           text="Result:"/>
+
+</VBox>
