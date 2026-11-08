@@ -7,10 +7,11 @@
 <VBox xmlns:fx="http://javafx.com/fxml"
       spacing="15"
       prefWidth="450"
-      prefHeight="350">
+      prefHeight="400">
 
     <padding>
-        <Insets top="20" right="20" bottom="20" left="20"/>
+        <Insets top="20" right="20"
+                bottom="20" left="20"/>
     </padding>
 
     <Label fx:id="titleLabel"
@@ -20,6 +21,13 @@
            text="Select Language"/>
 
     <ComboBox fx:id="languageComboBox"/>
+
+    <Label fx:id="unitNameLabel"
+           text="Celsius"/>
+
+    <Label fx:id="unitDescriptionLabel"
+           text="Temperature in Celsius"
+           wrapText="true"/>
 
     <TextField fx:id="temperatureInput"
                promptText="Enter temperature in Celsius"/>
