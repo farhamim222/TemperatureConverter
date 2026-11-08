@@ -1,4 +1,3 @@
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -12,7 +11,7 @@ import java.util.Locale;
 public class DatabaseManager {
 
     private static final String URL =
-            "jdbc:mariadb://127.0.0.1:3308/temperature_db";
+            "jdbc:mariadb://" + System.getenv().getOrDefault("DB_HOST", "127.0.0.1") + ":3308/temperature_db";
 
     private static final String USER = "tempapp";
 
@@ -90,7 +89,7 @@ public class DatabaseManager {
 
                 String entry = String.format(
                         Locale.US,
-                        "%.2f °C → %.2f °F",
+                        "%.2f Â°C â†’ %.2f Â°F",
                         celsius,
                         fahrenheit
                 );
@@ -152,3 +151,4 @@ public class DatabaseManager {
         return unitKey;
     }
 }
+
