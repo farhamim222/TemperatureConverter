@@ -89,7 +89,7 @@ public class DatabaseManager {
 
                 String entry = String.format(
                         Locale.US,
-                        "%.2f Â°C â†’ %.2f Â°F",
+                        "%.2f °C → %.2f °F",
                         celsius,
                         fahrenheit
                 );
